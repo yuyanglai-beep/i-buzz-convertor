@@ -1,8 +1,0 @@
-# 進入你的程式資料夾
-cd path/to/your/project
-
-# 初始化 git
-git init
-
-# 連結到 GitHub Repo
-git remote add origin https://github.com/你的帳號/i-buzz-editor.git

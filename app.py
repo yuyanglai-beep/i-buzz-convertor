@@ -318,6 +318,21 @@ def table_to_html(table):
     html.append('</table>')
     return ''.join(html)
 
+# ==========================================
+# 判斷是否為編號列點 (新增)
+# ==========================================
+def is_numbered_list(para):
+    """檢查是否為 Word 內建編號或手打數字開頭"""
+    # 1. 檢查 Word 內建編號屬性
+    pPr = para._element.get_or_add_pPr()
+    if pPr.xpath('./w:numPr'):
+        return True
+    # 2. 檢查手打數字 (例如: 1. 內容 或 1、內容)
+    text = para.text.strip()
+    if re.match(r"^\d+[\.\s、．]+", text):
+        return True
+    return False
+
 # ==========================================================
 # 📌 URL → iframe 轉換功能
 # ==========================================================
@@ -576,6 +591,7 @@ def docx_to_html_with_links(input_file, category_choice):
     html_output = []
     h1_text = None
     last_was_blank = False
+    in_list = False
     elements = list(doc.element.body)
     total = len(elements)
 
@@ -591,14 +607,31 @@ def docx_to_html_with_links(input_file, category_choice):
 
         if tag == "p":
             para = next((p for p in doc.paragraphs if p._element == element), None)
-            if not para:
-                continue
+            if not para: continue
 
             text = (para.text or "").strip()
+            style = para.style.name.lower() if para.style and para.style.name else ''
+
+            # --- 🚀 [新增邏輯] 處理標號列點 ---
+            if is_numbered_list(para) and text:
+                if not in_list:
+                    html_output.append("<ol>") # 開啟清單
+                    in_list = True
+                
+                content_html = paragraph_to_html_with_links(para)
+                # 清除文字中重複的開頭數字 (如 "1. " 或 "2、")，交給 HTML 自動編號
+                content_html = re.sub(r"^\d+[\.\s、．]+", "", content_html)
+                html_output.append(f"  <li>{content_html}</li>")
+                last_was_blank = False
+                continue # 跳過後續的一般段落處理
+            else:
+                if in_list:
+                    html_output.append("</ol>") # 遇到非列點文字，關閉清單
+                    in_list = False
+            # --- [新增邏輯結束] ---
+
             if not text:
                 continue
-
-            style = para.style.name.lower() if para.style and para.style.name else ''
 
             # 👉 先處理「整段只有 URL」→ 嘗試轉成 iframe
             if is_pure_url(text):
@@ -665,6 +698,9 @@ def docx_to_html_with_links(input_file, category_choice):
                 last_was_blank = False
 
         elif tag == "tbl":
+            if in_list: # <--- 插入這兩行
+                html_output.append("</ol>")
+                in_list = False
             for tbl in doc.tables:
                 if tbl._element == element:
                     if not last_was_blank:
@@ -673,7 +709,10 @@ def docx_to_html_with_links(input_file, category_choice):
                     html_output.append('<p>&nbsp;</p>')
                     last_was_blank = True
                     break
-
+    # 確保文件結束時清單已關閉
+    if in_list:
+        html_output.append("</ol>")
+    
     footer_html = CATEGORY_TO_FOOTER_HTML.get(category_choice, "")
     html_output.append('<p>&nbsp;</p><p>&nbsp;</p>' + footer_html + '<p>&nbsp;</p>')
     html_output = apply_auto_toc_and_smooth(html_output)

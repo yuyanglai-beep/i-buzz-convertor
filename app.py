@@ -16,11 +16,7 @@ import io
 FOOTER_VOC = """<div class="cta-card-wrapper"><div class="cta-card footer-card"><p class="footer-text"><em><strong class="footer-strong">i-Buzz 行業資料庫</strong><span class="footer-normal"> 提供各產業完整的品牌、產品資訊與熱門話題內容。您只需告訴我們想了解的產業領域，無需設定繁複關鍵字，即可快速取得可靠的行業口碑洞察。如需更深入的數據應用與分析服務，歡迎填寫表單與我們聯繫。</span></em></p><p class="footer-btn-area"><a href="https://www.i-buzz.com.tw/user/contact/" target="_blank"><img src="/uploads/industry_img/1712050466.png" alt="CTA" width="200" height="65"></a></p></div></div><style>.cta-card-wrapper { display: flex; justify-content: center; margin: 40px 0; } .footer-card { max-width: 720px; background: linear-gradient(180deg, #f4e9dc 0%, #fffdf9 90%); padding: 38px 45px; border-radius: 18px; border: none; box-shadow: 0 10px 28px rgba(140, 110, 70, 0.18); } .footer-text { font-size: 16px; line-height: 1.85; margin-bottom: 28px; color: #5a371e; } .footer-normal { color: #5a371e; } .footer-strong { color: #7b4a21; font-weight: 700; } .footer-btn-area { text-align: center; }</style>"""
 FOOTER_TREND = """<div class="cta-card-wrapper"><div class="cta-card footer-card"><p class="footer-text"><em><span class="footer-normal">i-Buzz為台灣首間網路口碑研究中心，累積超過16年的跨產業口碑分析經驗， 提供客戶 </span> <strong class="footer-strong">i-Buzz VOC+ 產業口碑數據庫、商業策略分析</strong> <span class="footer-normal"> 、消費者輪廓洞察及口碑行銷優化等全方位服務。 歡迎填寫表單，讓專業的團隊為您服務！ </span> </em></p><p class="footer-btn-area"><a href="https://www.i-buzz.com.tw/user/contact/" target="_blank"><img alt="CTA" height="65" src="/uploads/industry_img/1712050466.png" width="200" /> </a></p></div></div><style type="text/css">.cta-card-wrapper { display: flex; justify-content: center; margin: 40px 0; } .footer-card { max-width: 720px; background: linear-gradient(180deg, #f4e9dc 0%, #fffdf9 90%); padding: 38px 45px; border-radius: 18px; border: none; box-shadow: 0 10px 28px rgba(140, 110, 70, 0.18); } .footer-text { font-size: 16px; color: #5a371e; line-height: 1.85; margin-bottom: 28px; } .footer-normal { color: #5a371e; } .footer-strong { color: #7b4a21; font-weight: 700; } .footer-btn-area { text-align: center; }</style>"""
 FOOTER_AK = """
-<p style="margin-left:-7.1pt;">&nbsp;</p>
-<style type="text/css">.cta-section {
-
-  
-  <style>
+<style>
   .cta-section {
     text-align: center;
     color: #2c7a7b;
@@ -190,10 +186,14 @@ FOOTER_AK = """
     background: #225f61;
   }
 </style>
+</strong></p>
+
 <div class="cta-box">
-<div class="cta-one">⭐ <strong>「AsiaKOL 直播帶貨」協助品牌從企劃、直播、訂單到賣家聯繫，全程提升直播成效與轉換。</strong><br />
-若您想了解更多服務內容，或希望由專人協助規劃合作，歡迎點擊下方：
-<div class="cta-btn-wrap"><a class="cta-btn2" href="https://www.asiakol.com/page/view/service/store" target="_blank">服務介紹</a> <a class="cta-btn2" href="https://www.asiakol.com/page/view/contact-us" target="_blank">填寫需求單</a></div>
+<div class="cta-one">
+<p><strong>⭐ <strong>「AsiaKOL 網紅專案式顧問服務」</strong></strong><strong style="font-size: 18px; color: rgb(44, 122, 123); font-family: &quot;Noto Sans TC&quot;, sans-serif; text-align: center; background-color: rgb(249, 252, 252);"><strong>，</strong></strong><strong><strong>從網紅精準篩選、創意內容企劃到專案執行與監測，全程由專業團隊一手打造。</strong><br />
+若您想了解更多服務內容，或希望由專人協助規劃合作，歡迎點擊下方： </strong></p>
+
+<div class="cta-btn-wrap"><a class="cta-btn2" href="https://www.asiakol.com/page/view/service/project" target="_blank">服務介紹</a> <a class="cta-btn2" href="https://www.asiakol.com/page/view/contact-us" target="_blank">填寫需求單</a></div>
 </div>
 </div>
 

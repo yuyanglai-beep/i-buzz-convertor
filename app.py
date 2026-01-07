@@ -16,152 +16,30 @@ import io
 FOOTER_VOC = """<div class="cta-card-wrapper"><div class="cta-card footer-card"><p class="footer-text"><em><strong class="footer-strong">i-Buzz 行業資料庫</strong><span class="footer-normal"> 提供各產業完整的品牌、產品資訊與熱門話題內容。您只需告訴我們想了解的產業領域，無需設定繁複關鍵字，即可快速取得可靠的行業口碑洞察。如需更深入的數據應用與分析服務，歡迎填寫表單與我們聯繫。</span></em></p><p class="footer-btn-area"><a href="https://www.i-buzz.com.tw/user/contact/" target="_blank"><img src="/uploads/industry_img/1712050466.png" alt="CTA" width="200" height="65"></a></p></div></div><style>.cta-card-wrapper { display: flex; justify-content: center; margin: 40px 0; } .footer-card { max-width: 720px; background: linear-gradient(180deg, #f4e9dc 0%, #fffdf9 90%); padding: 38px 45px; border-radius: 18px; border: none; box-shadow: 0 10px 28px rgba(140, 110, 70, 0.18); } .footer-text { font-size: 16px; line-height: 1.85; margin-bottom: 28px; color: #5a371e; } .footer-normal { color: #5a371e; } .footer-strong { color: #7b4a21; font-weight: 700; } .footer-btn-area { text-align: center; }</style>"""
 FOOTER_TREND = """<div class="cta-card-wrapper"><div class="cta-card footer-card"><p class="footer-text"><em><span class="footer-normal">i-Buzz為台灣首間網路口碑研究中心，累積超過16年的跨產業口碑分析經驗， 提供客戶 </span> <strong class="footer-strong">i-Buzz VOC+ 產業口碑數據庫、商業策略分析</strong> <span class="footer-normal"> 、消費者輪廓洞察及口碑行銷優化等全方位服務。 歡迎填寫表單，讓專業的團隊為您服務！ </span> </em></p><p class="footer-btn-area"><a href="https://www.i-buzz.com.tw/user/contact/" target="_blank"><img alt="CTA" height="65" src="/uploads/industry_img/1712050466.png" width="200" /> </a></p></div></div><style type="text/css">.cta-card-wrapper { display: flex; justify-content: center; margin: 40px 0; } .footer-card { max-width: 720px; background: linear-gradient(180deg, #f4e9dc 0%, #fffdf9 90%); padding: 38px 45px; border-radius: 18px; border: none; box-shadow: 0 10px 28px rgba(140, 110, 70, 0.18); } .footer-text { font-size: 16px; color: #5a371e; line-height: 1.85; margin-bottom: 28px; } .footer-normal { color: #5a371e; } .footer-strong { color: #7b4a21; font-weight: 700; } .footer-btn-area { text-align: center; }</style>"""
 FOOTER_AK = """
-<style>
-  .cta-section {
-    text-align: center;
-    color: #2c7a7b;
-    font-family: "Noto Sans TC", sans-serif;
-    margin: 20px auto 40px;
-    line-height: 1.6;
-    max-width: 780px;
-  }
+ <div class="cta-box">
+<div class="cta-one">
+<p><strong>⭐ <strong>「AsiaKOL 網紅專案式顧問服務」</strong></strong><strong background-color:="" noto="" sans="" style="font-size: 18px; color: rgb(44, 122, 123); font-family: " text-align:=""><strong>，</strong></strong><strong><strong>從網紅精準篩選、創意內容企劃到專案執行與監測，全程由專業團隊一手打造。</strong><br />
+若您想了解更多服務內容，或希望由專人協助規劃合作，歡迎點擊下方： </strong></p>
 
-  .cta-block {
-    margin-bottom: 32px; /* 兩段 CTA 之間的距離更短 */
-  }
+<div class="cta-btn-wrap"><a class="cta-btn2" href="https://www.asiakol.com/page/view/service/project" target="_blank">服務介紹</a> <a class="cta-btn2" href="https://www.asiakol.com/page/view/contact-us" target="_blank">填寫需求單</a></div>
+</div>
+</div>
 
-  .cta-star {
-    font-size: 18px;
-    margin-right: 4px;
-  }
-
-  .cta-title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px; /* 標題與文字距離縮短 */
-  }
-
-  .cta-desc {
-    font-size: 15px;
-    margin-bottom: 18px; /* 變緊湊 */
-  }
-
-  .cta-btn {
-    display: inline-block;
-    padding: 10px 22px;
-    background: #2c7a7b;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    transition: 0.25s;
-  }
-
-  .cta-btn:hover {
-    background: #225f61;
-  }
-</style>
-<style type="text/css">.cta-section {
-    text-align: center;
-    color: #2c7a7b; 
-    font-family: "Noto Sans TC", sans-serif;
-    margin: 40px auto;
-    line-height: 1.8;
-    max-width: 820px;
-  }
-
-  .cta-star {
-    font-size: 22px;
-    margin-right: 6px;
-  }
-
-  .cta-text {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 20px 0 10px;
-  }
-
-  .cta-desc {
-    font-size: 16px;
-    margin-bottom: 28px;
-  }
-
-  .cta-btn {
-    display: inline-block;
-    padding: 10px 28px;
-    margin: 8px 0 25px;
-    background: #2c7a7b;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.25s;
-  }
-
-  .cta-btn:hover {
-    background: #225f61;
-  }
-</style>
-<style type="text/css">.cta-one {
-    text-align: center;
-    color: #2c7a7b;
-    font-family: "Noto Sans TC", sans-serif;
-    max-width: 800px;
-    margin: 40px auto;
-    line-height: 1.7;
-  }
-
-  .cta-one strong {
-    font-size: 18px;
-  }
-
-  .cta-btn-wrap {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    flex-wrap: wrap;
-  }
-
-  .cta-btn2 {
-    display: inline-block;
-    padding: 10px 22px;
-    background: #2c7a7b;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    transition: 0.25s;
-  }
-
-  .cta-btn2:hover {
-    background: #225f61;
-  }
-</style>
+<p>&nbsp;</p>
 <style type="text/css">.cta-box {
-    border: 1.5px solid #c7d8d8; /* 外框顏色 */
+    border: 1.5px solid #c7d8d8;
     border-radius: 10px;
-    padding: 28px 22px;
+    padding: 50px 22px;
     max-width: 820px;
     margin: 40px auto;
-    background: #f9fcfc; /* 淡淡底色，讓 CTA 更突出 */
+    background: #f9fcfc;
   }
-
   .cta-one {
     text-align: center;
     color: #2c7a7b;
     font-family: "Noto Sans TC", sans-serif;
     line-height: 1.7;
-    font-size: 16px;
   }
-
-  .cta-one strong {
-    font-size: 18px;
-  }
-
   .cta-btn-wrap {
     margin-top: 18px;
     display: flex;
@@ -169,34 +47,23 @@ FOOTER_AK = """
     gap: 14px;
     flex-wrap: wrap;
   }
-
-  .cta-btn2 {
+  /* 增加權重並確保所有狀態都是白色 */
+  a.cta-btn2, a.cta-btn2:visited {
     display: inline-block;
     padding: 10px 22px;
-    background: #2c7a7b;
-    color: white;
+    background-color: #2c7a7b !important;
+    color: #ffffff !important; /* 強制執行白色 */
     border-radius: 6px;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 15px;
     font-weight: 600;
     transition: 0.25s;
   }
-
-  .cta-btn2:hover {
-    background: #225f61;
+  a.cta-btn2:hover {
+    background-color: #225f61 !important;
+    color: #ffffff !important;
   }
 </style>
-</strong></p>
-
-<div class="cta-box">
-<div class="cta-one">
-<p><strong>⭐ <strong>「AsiaKOL 網紅專案式顧問服務」</strong></strong><strong style="font-size: 18px; color: rgb(44, 122, 123); font-family: &quot;Noto Sans TC&quot;, sans-serif; text-align: center; background-color: rgb(249, 252, 252);"><strong>，</strong></strong><strong><strong>從網紅精準篩選、創意內容企劃到專案執行與監測，全程由專業團隊一手打造。</strong><br />
-若您想了解更多服務內容，或希望由專人協助規劃合作，歡迎點擊下方： </strong></p>
-
-<div class="cta-btn-wrap"><a class="cta-btn2" href="https://www.asiakol.com/page/view/service/project" target="_blank">服務介紹</a> <a class="cta-btn2" href="https://www.asiakol.com/page/view/contact-us" target="_blank">填寫需求單</a></div>
-</div>
-</div>
-
 """
 FOOTER_FF = """
 <hr />
@@ -317,21 +184,6 @@ def table_to_html(table):
         html.append('</tr>')
     html.append('</table>')
     return ''.join(html)
-
-# ==========================================
-# 判斷是否為編號列點 (新增)
-# ==========================================
-def is_numbered_list(para):
-    """檢查是否為 Word 內建編號或手打數字開頭"""
-    # 1. 檢查 Word 內建編號屬性
-    pPr = para._element.get_or_add_pPr()
-    if pPr.xpath('./w:numPr'):
-        return True
-    # 2. 檢查手打數字 (例如: 1. 內容 或 1、內容)
-    text = para.text.strip()
-    if re.match(r"^\d+[\.\s、．]+", text):
-        return True
-    return False
 
 # ==========================================================
 # 📌 URL → iframe 轉換功能
@@ -591,7 +443,6 @@ def docx_to_html_with_links(input_file, category_choice):
     html_output = []
     h1_text = None
     last_was_blank = False
-    in_list = False
     elements = list(doc.element.body)
     total = len(elements)
 
@@ -612,23 +463,6 @@ def docx_to_html_with_links(input_file, category_choice):
             text = (para.text or "").strip()
             style = para.style.name.lower() if para.style and para.style.name else ''
 
-            # --- 🚀 [新增邏輯] 處理標號列點 ---
-            if is_numbered_list(para) and text:
-                if not in_list:
-                    html_output.append("<ol>") # 開啟清單
-                    in_list = True
-                
-                content_html = paragraph_to_html_with_links(para)
-                # 清除文字中重複的開頭數字 (如 "1. " 或 "2、")，交給 HTML 自動編號
-                content_html = re.sub(r"^\d+[\.\s、．]+", "", content_html)
-                html_output.append(f"  <li>{content_html}</li>")
-                last_was_blank = False
-                continue # 跳過後續的一般段落處理
-            else:
-                if in_list:
-                    html_output.append("</ol>") # 遇到非列點文字，關閉清單
-                    in_list = False
-            # --- [新增邏輯結束] ---
 
             if not text:
                 continue
@@ -698,9 +532,6 @@ def docx_to_html_with_links(input_file, category_choice):
                 last_was_blank = False
 
         elif tag == "tbl":
-            if in_list: # <--- 插入這兩行
-                html_output.append("</ol>")
-                in_list = False
             for tbl in doc.tables:
                 if tbl._element == element:
                     if not last_was_blank:
@@ -710,9 +541,6 @@ def docx_to_html_with_links(input_file, category_choice):
                     last_was_blank = True
                     break
     # 確保文件結束時清單已關閉
-    if in_list:
-        html_output.append("</ol>")
-    
     footer_html = CATEGORY_TO_FOOTER_HTML.get(category_choice, "")
     html_output.append('<p>&nbsp;</p><p>&nbsp;</p>' + footer_html + '<p>&nbsp;</p>')
     html_output = apply_auto_toc_and_smooth(html_output)
